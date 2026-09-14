@@ -1,0 +1,18 @@
+{
+  "entity": {
+    "sensor": {
+      "status": {
+        "default": "mdi:car-battery"
+      },
+      "history_records": {
+        "default": "mdi:chart-line"
+      },
+      "sample_interval": {
+        "default": "mdi:timer-cog-outline"
+      },
+      "last_successful_sync": {
+        "default": "mdi:clock-check-outline"
+      }
+    }
+  }
+}

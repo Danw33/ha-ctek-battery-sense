@@ -1,0 +1,82 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Select a CTEK Battery Sense",
+        "description": "Select the nearby battery monitor to configure.",
+        "data": {
+          "address": "Device"
+        }
+      },
+      "credentials": {
+        "title": "Configure CTEK Battery Sense",
+        "description": "Enter the Sender ID printed on the monitor or box for the device at {address}. The battery capacity is stored in Home Assistant and used for State of Charge calculation.",
+        "data": {
+          "sender_id": "Sender ID",
+          "capacity_ah": "Battery capacity"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect. Make sure the monitor is in range and not connected to the CTEK app.",
+      "invalid_auth": "The Sender ID did not unlock this monitor.",
+      "invalid_sender_id": "Enter the 11-character Sender ID or full 16-character barcode.",
+      "not_found": "The monitor is no longer in range.",
+      "pairing_failed": "Connected to the monitor, but BLE pairing failed. Make sure the CTEK app is closed and the Bluetooth proxy supports pairing.",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This monitor is already configured.",
+      "no_connectable_devices": "CTEK monitors were detected, but only by an advertisement-only Bluetooth controller. Enable active GATT connections on the nearby Bluetooth proxy or use a connection-capable Bluetooth adapter.",
+      "no_devices_found": "No unconfigured CTEK Battery Sense monitors were found."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "CTEK Battery Sense options",
+        "description": "Changing capacity recalculates State of Charge from the stored voltage history. The update interval controls how often Home Assistant connects while the monitor is in range.",
+        "data": {
+          "capacity_ah": "Battery capacity",
+          "update_interval": "Update interval"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "voltage": {
+        "name": "Voltage"
+      },
+      "temperature": {
+        "name": "Temperature"
+      },
+      "state_of_charge": {
+        "name": "State of charge"
+      },
+      "status": {
+        "name": "Battery status",
+        "state": {
+          "green": "Battery ok",
+          "amber": "Charge soon",
+          "red": "Charge now"
+        }
+      },
+      "signal_strength": {
+        "name": "Signal strength"
+      },
+      "uptime": {
+        "name": "Uptime"
+      },
+      "history_records": {
+        "name": "Cached history records"
+      },
+      "sample_interval": {
+        "name": "Device sample interval"
+      },
+      "last_successful_sync": {
+        "name": "Last successful sync"
+      }
+    }
+  }
+}

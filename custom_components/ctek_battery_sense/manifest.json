@@ -1,0 +1,19 @@
+{
+  "domain": "ctek_battery_sense",
+  "name": "CTEK Battery Sense",
+  "bluetooth": [
+    {
+      "connectable": true,
+      "service_uuid": "812ca8ed-a177-4d74-aefa-70098c5416af"
+    }
+  ],
+  "codeowners": ["@Danw33"],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/Danw33/ha-ctek-battery-sense",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/Danw33/ha-ctek-battery-sense/issues",
+  "requirements": ["ctek-battery-sense==0.1.0"],
+  "version": "0.2.0"
+}
