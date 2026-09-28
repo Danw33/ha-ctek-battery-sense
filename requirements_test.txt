@@ -10,5 +10,5 @@ ctek-battery-sense==0.1.0
 # integrations. They must be present before pytest imports those modules.
 aiousbwatcher==1.1.2
 dbus-fast==5.0.22
-habluetooth==7.0.0
+habluetooth==7.1.2
 serialx==1.10.0
