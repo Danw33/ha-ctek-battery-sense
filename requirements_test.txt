@@ -3,7 +3,7 @@ pytest==9.0.3
 pytest-cov==7.1.0
 pytest-homeassistant-custom-component==0.13.365
 mypy==2.3.1
-ruff==0.16.7
+ruff==0.16.9
 ctek-battery-sense==0.1.0
 
 # Requirements loaded dynamically by Home Assistant's Bluetooth and USB
