@@ -9,6 +9,6 @@ ctek-battery-sense==0.1.0
 # Requirements loaded dynamically by Home Assistant's Bluetooth and USB
 # integrations. They must be present before pytest imports those modules.
 aiousbwatcher==1.1.2
-dbus-fast==5.0.22
+dbus-fast==5.2.0
 habluetooth==7.0.0
 serialx==1.10.0
