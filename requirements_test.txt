@@ -11,4 +11,4 @@ ctek-battery-sense==0.1.0
 aiousbwatcher==1.1.2
 dbus-fast==5.2.0
 habluetooth==7.1.2
-serialx==1.10.0
+serialx==1.15.0
