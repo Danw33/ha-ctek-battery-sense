@@ -14,7 +14,7 @@ from custom_components.ctek_battery_sense.const import (
     DOMAIN,
 )
 from homeassistant.core import HomeAssistant
-from pytest_homeassistant_custom_component.common import MockConfigEntry
+from pytest_homeassistant.common import MockConfigEntry
 
 pytestmark = pytest.mark.usefixtures("enable_custom_integrations")
 

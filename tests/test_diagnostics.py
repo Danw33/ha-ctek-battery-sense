@@ -17,7 +17,7 @@ from custom_components.ctek_battery_sense.diagnostics import (
 from custom_components.ctek_battery_sense.models import CTEKData
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.discovery_flow import DiscoveryKey
-from pytest_homeassistant_custom_component.common import MockConfigEntry
+from pytest_homeassistant.common import MockConfigEntry
 
 ADDRESS = "AA:BB:CC:DD:EE:FF"
 SOURCE = "11:22:33:44:55:66"
