@@ -2,7 +2,7 @@ homeassistant==2026.11.0
 pytest-cov==7.1.0
 # Owns the matching pytest and pytest-asyncio pins.
 pytest-homeassistant[bluetooth]==2026.11.0
-mypy==2.3.1
+mypy==2.4.1
 ruff==0.16.7
 ctek-battery-sense==0.1.0
 
