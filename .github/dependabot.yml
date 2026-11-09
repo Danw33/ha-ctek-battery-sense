@@ -4,7 +4,7 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    # Match HA 2026.11.0's Bluetooth manifest; revise with the HA target.
+    # Match HA 2026.11.1's Bluetooth manifest; revise with the HA target.
     ignore:
       - dependency-name: bleak
         versions: [">3.0.2"]

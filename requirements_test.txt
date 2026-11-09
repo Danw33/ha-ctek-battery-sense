@@ -1,11 +1,11 @@
-homeassistant==2026.11.0
+homeassistant==2026.11.1
 pytest-cov==7.1.0
 # Owns the matching pytest and pytest-asyncio pins.
-pytest-homeassistant[bluetooth]==2026.11.0
+pytest-homeassistant[bluetooth]==2026.11.1
 mypy==2.4.1
 ruff==0.17.4
 ctek-battery-sense==0.1.0
 
-# Additional requirements from HA 2026.11.0's Bluetooth manifest.
+# Additional requirements from HA 2026.11.1's Bluetooth manifest.
 bleak==3.0.2
 dbus-fast==5.0.22
