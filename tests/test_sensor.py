@@ -15,7 +15,7 @@ from custom_components.ctek_battery_sense.sensor import (
     async_setup_entry,
 )
 from homeassistant.core import HomeAssistant
-from pytest_homeassistant_custom_component.common import MockConfigEntry
+from pytest_homeassistant.common import MockConfigEntry
 
 ADDRESS = "AA:BB:CC:DD:EE:FF"
 SENDER_ID = "Z99TEST0001"

@@ -17,7 +17,9 @@ physical monitor.
 
 ## Development environment
 
-The integration targets Python 3.14 and Home Assistant 2026.9 or newer.
+Development uses Python 3.14 and Home Assistant 2026.11.0. Upgrade `homeassistant`
+and `pytest-homeassistant[bluetooth]` together. The test package supplies the
+matching pytest, pytest-asyncio, Bluetooth and USB test dependencies.
 
 ```bash
 python3.14 -m venv .venv

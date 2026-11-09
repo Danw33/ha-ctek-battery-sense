@@ -3,7 +3,7 @@
 import logging
 from typing import Any, override
 
-import voluptuous as vol
+import probatio
 from bleak.exc import BleakError
 from bleak_retry_connector import close_stale_connections_by_address
 from homeassistant.components import bluetooth
@@ -107,9 +107,9 @@ class CTEKConfigFlow(ConfigFlow, domain=DOMAIN):
             return self.async_abort(reason="no_devices_found")
         return self.async_show_form(
             step_id="user",
-            data_schema=vol.Schema(
+            data_schema=probatio.Schema(
                 {
-                    vol.Required(CONF_ADDRESS): vol.In(
+                    probatio.Required(CONF_ADDRESS): probatio.In(
                         {
                             address: f"{info.name} ({address}, {info.rssi} dBm)"
                             for address, info in self._discovered.items()
@@ -166,10 +166,10 @@ class CTEKConfigFlow(ConfigFlow, domain=DOMAIN):
 
         return self.async_show_form(
             step_id="credentials",
-            data_schema=vol.Schema(
+            data_schema=probatio.Schema(
                 {
-                    vol.Required(CONF_SENDER_ID): str,
-                    vol.Required(
+                    probatio.Required(CONF_SENDER_ID): str,
+                    probatio.Required(
                         CONF_CAPACITY_AH, default=DEFAULT_CAPACITY_AH
                     ): selector.NumberSelector(
                         selector.NumberSelectorConfig(
@@ -206,9 +206,9 @@ class CTEKOptionsFlow(OptionsFlowWithReload):
         )
         return self.async_show_form(
             step_id="init",
-            data_schema=vol.Schema(
+            data_schema=probatio.Schema(
                 {
-                    vol.Required(CONF_CAPACITY_AH, default=current): (
+                    probatio.Required(CONF_CAPACITY_AH, default=current): (
                         selector.NumberSelector(
                             selector.NumberSelectorConfig(
                                 min=MIN_CAPACITY_AH,
@@ -219,7 +219,7 @@ class CTEKOptionsFlow(OptionsFlowWithReload):
                             )
                         )
                     ),
-                    vol.Required(
+                    probatio.Required(
                         CONF_UPDATE_INTERVAL, default=current_update_interval
                     ): selector.NumberSelector(
                         selector.NumberSelectorConfig(

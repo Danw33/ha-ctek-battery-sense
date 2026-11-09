@@ -24,7 +24,7 @@ that advertise different Bluetooth services are not currently supported.
 
 ## Requirements
 
-- Home Assistant 2026.9.0 or newer
+- Home Assistant 2026.11.0 or newer
 - A connectable Home Assistant Bluetooth adapter or ESPHome Bluetooth proxy
 - The 11-character Sender ID printed on the monitor or its packaging
 - The battery capacity in ampere-hours
