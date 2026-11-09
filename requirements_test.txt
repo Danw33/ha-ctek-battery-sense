@@ -8,4 +8,4 @@ ctek-battery-sense==0.1.0
 
 # Additional requirements from HA 2026.11.0's Bluetooth manifest.
 bleak==3.0.2
-dbus-fast==5.0.22
+dbus-fast==5.2.0
